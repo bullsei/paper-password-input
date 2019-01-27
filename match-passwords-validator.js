@@ -12,7 +12,8 @@ class MatchPasswordsValidator extends mixinBehaviors([IronValidatorBehavior], Po
 	}
   
 	validate(value) {
-		return value === "cat";
+		// Ignore if no confirm password was entered
+		return !value || value === this.password;
 	}
 }
 customElements.define("match-passwords-validator", MatchPasswordsValidator);
