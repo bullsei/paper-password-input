@@ -50,6 +50,9 @@ class PaperPasswordInput extends PolymerElement {
 
 	static get properties() {
 		return {
+			/**
+			 * True if the content of the password field is visible
+			 */
 			visible: {
 				type: Boolean,
 				value: false
@@ -62,20 +65,48 @@ class PaperPasswordInput extends PolymerElement {
 				type: Boolean,
 				notify: true
 			},
-			label: String,
-			name: String,
-			disabled: Boolean,
-			required: Boolean,
-			readonly: Boolean,
-			autofocus: Boolean,
-			autoValidate: Boolean,
-			validator: String,
-			errorMessage: String,
-			charCounter: Boolean,
-			maxlength: Number,
-			allowedPattern: String,
-			pattern: String,
-			alt: String,
+			label: {
+				type: String
+			},
+			name: {
+				type: String
+			},
+			disabled: {
+				type: Boolean
+			},
+			required: {
+				type: Boolean
+			},
+			readonly: {
+				type: Boolean
+			},
+			autofocus: {
+				type: Boolean
+			},
+			autoValidate: {
+				type: Boolean
+			},
+			validator: {
+				type: String
+			},
+			errorMessage: {
+				type: String
+			},
+			charCounter: {
+				type: Boolean
+			},
+			maxlength: {
+				type: Number
+			},
+			allowedPattern: {
+				type: String
+			},
+			pattern: {
+				type: String
+			},
+			alt: {
+				type: String
+			},
 		};
 	}
     

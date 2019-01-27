@@ -7,7 +7,9 @@ class MatchPasswordsValidator extends mixinBehaviors([IronValidatorBehavior], Po
 	// the value is "cat".
 	static get properties() {
 		return {
-			minLength: Number
+			minLength: {
+				type: Number
+			}
 		};
 	}
   
