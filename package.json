@@ -1,0 +1,10 @@
+{
+  "name": "@bullsei/paper-password-input",
+  "version": "1.0",
+  "engines": {
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.1.0"
+  }
+}
