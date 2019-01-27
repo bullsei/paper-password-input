@@ -1,5 +1,5 @@
 {
-  "name": "@bullsei/paper-password-input",
+  "name": "bullsei/paper-password-input",
   "version": "1.0",
   "engines": {
     "npm": ">= 6.0.0"
