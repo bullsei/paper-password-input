@@ -1,7 +1,8 @@
 import { PolymerElement, html } from "@polymer/polymer/polymer-element.js";
 import "@polymer/iron-icons/iron-icons.js";
 import "@polymer/paper-input/paper-input.js";
-import "@polymer/paper-icon-button";
+import "@polymer/paper-icon-button/paper-icon-button.js";
+import "@polymer/paper-styles/default-theme.js";
 
 
 class PaperPasswordInput extends PolymerElement {
