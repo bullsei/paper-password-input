@@ -32,6 +32,7 @@ class PaperPasswordInput extends PolymerElement {
 			autofocus="[[autofocus]]"
 			auto-validate="[[autoValidate]]"
 			allowed-pattern="[[allowedPattern]]"
+			pattern="[[pattern]]"
 			invalid="{{invalid}}"
 			validator="[[validator]]"
 			error-message="[[errorMessage]]"
@@ -73,6 +74,7 @@ class PaperPasswordInput extends PolymerElement {
 			charCounter: Boolean,
 			maxlength: Number,
 			allowedPattern: String,
+			pattern: String,
 			alt: String,
 		};
 	}
