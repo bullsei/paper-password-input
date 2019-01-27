@@ -1,6 +1,6 @@
 {
   "name": "bullsei/paper-password-input",
-  "version": "1.0",
+  "version": "1.0.0",
   "engines": {
     "npm": ">= 6.0.0"
   },
