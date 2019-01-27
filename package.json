@@ -1,5 +1,5 @@
 {
-  "name": "paper-password-input",
+  "name": "@bullsei/paper-password-input",
   "version": "1.0.0",
   "description": "Provides a Material Design input field to enter passwords.",
   "main": "paper-password-input.js",
