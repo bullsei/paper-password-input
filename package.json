@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/bullsei/paper-password-input/issues"
   },
-  "homepage": "https://github.com/bullsei/paper-password-input#readme"
+  "homepage": "https://github.com/bullsei/paper-password-input#readme",
+  "dependencies": {
+    "@polymer/iron-icons": "^3.0.1",
+    "@polymer/iron-validator-behavior": "^3.0.1",
+    "@polymer/paper-icon-button": "^3.0.2",
+    "@polymer/paper-input": "^3.0.1",
+    "@polymer/paper-styles": "^3.0.1",
+    "@polymer/polymer": "^3.1.0"
+  }
 }
