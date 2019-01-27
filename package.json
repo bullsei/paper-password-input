@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "paper-password-input",
   "version": "1.0.0",
   "description": "Provides a Material Design input field to enter passwords.",
@@ -19,4 +20,14 @@
     "url": "https://github.com/bullsei/paper-password-input/issues"
   },
   "homepage": "https://github.com/bullsei/paper-password-input#readme"
+=======
+  "name": "bullsei/paper-password-input",
+  "version": "1.0.0",
+  "engines": {
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.1.0"
+  }
+>>>>>>> dd0121de421adc4259b769238ea4627f4e214cc0
 }
