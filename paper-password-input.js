@@ -111,6 +111,7 @@ class PaperPasswordInput extends PolymerElement {
 	}
     
 	validate() {
+		console.log("validate in password in put called");
 		return this.$.input.validate();
 	}
 	_getIcon(visible) {
