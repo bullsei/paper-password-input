@@ -4,48 +4,42 @@ import "@polymer/paper-input/paper-input.js";
 import "@polymer/paper-icon-button/paper-icon-button.js";
 import "@polymer/paper-styles/default-theme.js";
 
-
 class PaperPasswordInput extends PolymerElement {
-	static get template() { return html`
-    
-        <style>
-            .visibility-icon {
-                color: var(--disabled-text-color);
-                /** Bottom align visibility button with input box */
-                height: 32px;
-                width: 32px;
-                padding: 0 4px;
-                margin-top: -6px;
-            }
-		</style>
+	static get template() {
+		return html`
+			<style>
+				.visibility-icon {
+					color: var(--disabled-text-color);
+					/** Bottom align visibility button with input box */
+					height: 32px;
+					width: 32px;
+					padding: 0 4px;
+					margin-top: -6px;
+				}
+			</style>
 
-		<paper-input
-			id="input"
-			type="[[_getType(visible)]]"
-			value="{{value}}"
-			label="[[label]]"
-			name="[[name]]"
-			maxlength="[[maxlength]]"
-			disabled="[[disabled]]"
-			readonly="[[readonly]]"
-			required="[[required]]"
-			autofocus="[[autofocus]]"
-			auto-validate="[[autoValidate]]"
-			allowed-pattern="[[allowedPattern]]"
-			pattern="[[pattern]]"
-			invalid="{{invalid}}"
-			validator="[[validator]]"
-			error-message="[[errorMessage]]"
-			char-counter="[[charCounter]]">
-			<paper-icon-button
-				slot="suffix"
-				icon="[[_getIcon(visible)]]"
-				on-tap="_toggleVisible"
-				class="visibility-icon"
-				tabindex="-1"
-				alt="[[alt]]"
-			></paper-icon-button>
-		</paper-input>`;
+			<paper-input
+				id="input"
+				type="[[_getType(visible)]]"
+				value="{{value}}"
+				label="[[label]]"
+				name="[[name]]"
+				maxlength="[[maxlength]]"
+				disabled="[[disabled]]"
+				readonly="[[readonly]]"
+				required="[[required]]"
+				autofocus="[[autofocus]]"
+				auto-validate="[[autoValidate]]"
+				allowed-pattern="[[allowedPattern]]"
+				pattern="[[pattern]]"
+				invalid="{{invalid}}"
+				validator="[[validator]]"
+				error-message="[[errorMessage]]"
+				char-counter="[[charCounter]]"
+			>
+				<paper-icon-button slot="suffix" icon="[[_getIcon(visible)]]" on-tap="_toggleVisible" class="visibility-icon" tabindex="-1" alt="[[alt]]" aria-label="[[ariaLabel]]"> </paper-icon-button>
+			</paper-input>
+		`;
 	}
 
 	static get properties() {
@@ -107,9 +101,12 @@ class PaperPasswordInput extends PolymerElement {
 			alt: {
 				type: String
 			},
+			ariaLabel: {
+				type: String
+			}
 		};
 	}
-    
+
 	validate() {
 		console.log("validate in password in put called");
 		return this.$.input.validate();
